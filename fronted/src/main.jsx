@@ -19,6 +19,11 @@ createRoot(document.getElementById('root')).render(
         publishableKey={PUBLISHABLE_KEY}
         signInFallbackRedirectUrl="/pricing"
         signUpFallbackRedirectUrl="/pricing"
+        afterSignInUrl="/pricing"
+        afterSignUpUrl="/pricing"
+        // publishableKey={PUBLISHABLE_KEY}
+        // signInFallbackRedirectUrl="/pricing"
+        // signUpFallbackRedirectUrl="/pricing"
       >
         <App />
       </ClerkProvider>
