@@ -19,7 +19,7 @@ app.use("/api", webhookRouter);
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://invoiceapp-seven-lovat.vercel.app/"
+    "https://invoiceapp-seven-lovat.vercel.app"
   ],
   credentials: true
 })); 
