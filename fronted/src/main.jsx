@@ -21,6 +21,7 @@ createRoot(document.getElementById('root')).render(
         signUpFallbackRedirectUrl="/pricing"
         afterSignInUrl="/pricing"
         afterSignUpUrl="/pricing"
+        allowedRedirectOrigins={['https://invoiceapp-seven-lovat.vercel.app']}
         // publishableKey={PUBLISHABLE_KEY}
         // signInFallbackRedirectUrl="/pricing"
         // signUpFallbackRedirectUrl="/pricing"
