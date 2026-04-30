@@ -15,11 +15,18 @@ import webhookRouter from "./routes/webhook.js";
 const app = express(); 
 const port = 5000; 
 app.use("/api", webhookRouter);
-//MIDDLEWARE 
+//MIDDLEWARE
 app.use(cors({
-  origin: true,
+  origin: [
+    "http://localhost:5173",
+    "https://invoiceapp-seven-lovat.vercel.app/"
+  ],
   credentials: true
-}));
+})); 
+// app.use(cors({
+//   origin: true,
+//   credentials: true
+// }));
 // app.use(cors({
 //     origin: "http://localhost:5174",
 //   //origin: "http://localhost:5173",
